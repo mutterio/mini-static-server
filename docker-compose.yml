@@ -1,0 +1,7 @@
+web:
+  build: .
+  volumes:
+    - ./public:/var/www/files
+    - ./logs/:/var/log/nginx
+  ports:
+    - "8050:80"
