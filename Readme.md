@@ -7,9 +7,10 @@ simple nginx docker container to easily serve static files.
 
 ```shell
 # run from docker registry
-docker run mutterio/mini-static-server \
+docker run  \
   -p 8085:80 \
-  -v ./public:/var/www/files
+  -v ./public:/var/www/files \
+  mutterio/mini-static-server
 ```
 
 ```shell
